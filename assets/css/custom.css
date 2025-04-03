@@ -1,31 +1,59 @@
-/* 让主标题（h1）更突出 */
+/* 全局样式 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* 居中内容 */
+  align-items: center;     /* 垂直居中 */
+  height: 100vh;           /* 让页面占满整个视口高度 */
+  text-align: center;      /* 文本居中对齐 */
+  flex-direction: column;  /* 垂直排列子元素 */
+}
+
+/* 页面标题 */
 h1 {
   font-size: 3em;
   color: #3498db;
+  margin-top: 20px;
 }
 
-/* 修改链接按钮样式 */
+/* 页面段落 */
+p {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+
+/* 链接按钮样式 */
 a {
+  text-decoration: none;
   background-color: #3498db;
+  padding: 10px 20px;
   color: white;
   border-radius: 5px;
-  padding: 10px 20px;
-  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 a:hover {
   background-color: #2980b9;
 }
 
-/* 设置背景图片 */
+/* 页面背景 */
 body {
-  background-image: url('https://your-image-url.com');
+  background-image: url('https://your-image-url.com'); /* 你可以换成自己喜欢的图片 */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* 响应式设计（对于小屏设备，缩小字体） */
+/* 响应式设计 */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5em;
@@ -33,5 +61,10 @@ body {
 
   p {
     font-size: 1.1em;
+  }
+
+  a {
+    padding: 8px 15px;
+    font-size: 1em;
   }
 }
