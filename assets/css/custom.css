@@ -1,0 +1,37 @@
+/* 让主标题（h1）更突出 */
+h1 {
+  font-size: 3em;
+  color: #3498db;
+}
+
+/* 修改链接按钮样式 */
+a {
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #2980b9;
+}
+
+/* 设置背景图片 */
+body {
+  background-image: url('https://your-image-url.com');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* 响应式设计（对于小屏设备，缩小字体） */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
